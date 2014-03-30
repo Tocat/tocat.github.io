@@ -72,13 +72,26 @@
 <p align="left">最近在加强JAVA和Python，今天刚看了Python中类的定义，与其他的都不同，做一下笔记</p>
 <p align="left">PHP:<br>class A entends B {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var $a;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public function __construct($a){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this->a=$a;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>调用时$a = new A(x)</p>
 <p align="left">JAVA:<br>class A entends B {<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private int a;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private int a;<br>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A(int x){<br>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.a = x;<br>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
 	调用时A a = new A(2);
 </p>
+<p align="left">Python:<br>class Student(object):<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self,name,age):<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.__name = name<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.__age = age<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def outp(self):<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(self.__name)<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(self.__age)<br>
+	Goodstudent(Student):<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self,name):<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.__name = name<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.__age = 99<br>
 
+	调用时a = Goodstudent("tom")<br>a.outp()
+</p>
 			</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
